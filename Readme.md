@@ -1,8 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Елена Сергеева](https://up.htmlacademy.ru/htmlcss-individual/2/user/2436295).
-* Наставник: `Неизвестно`.
-
+* Наставник: [Ярослав Шевцов](https://htmlacademy.ru/profile/redx).
+* Сайт: [Мой проект Седона] (https://helensergeeva.github.io/2436295-sedona-2/)
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
