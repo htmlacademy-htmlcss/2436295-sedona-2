@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Каталог сайта Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -43,6 +44,7 @@
 
     <!-- Страница каталога -->
     <main class="main-inner">
+      <div class="inner-filter">
       <header class="inner-header">
         <h1 class="header-inner-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs-list">
@@ -122,9 +124,10 @@
           <button class="catalog-filter-reset" type="reset" value="сбросить">Сбросить</button>
         </form>
       </section>
+    </div>
 
       <section class="catalog-product">
-        <h2 class="catalog-product-title">Найдено гостиниц <span>38</span></h2>
+        <h2 class="catalog-product-title">Найдено гостиниц:<span>38</span></h2>
         <select class="select-control" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="popular">Сначала популярные</option>
@@ -217,7 +220,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link" href="#">...</a>
+            <a class="pagination-link pagination-unwrap" href="#">...</a>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
