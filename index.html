@@ -81,8 +81,11 @@
 
       <section class="services"> <!-- Услуги -->
         <h2 class="visually-hidden">Услуги</h2>
+
         <p class="lead lead-services">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
         <p class="lead-description lead-description-services">Опытный персонал и качественное обслуживание!</p>
+        <p class="lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+        <p class="lead-description">Опытный персонал и качественное обслуживание!</p>
 
         <ul class="services-list">
           <li class="services-item item-medium">
@@ -90,7 +93,7 @@
             <p class="services-description">Рекомендуем пожить в настоящем мотеле,
               всё как в кино!</p>
           </li>
-          <li class="services-item">
+          <li class="services-item item-light">
             <h3 class="services-title">Еда</h3>
             <p class="services-description">Всегда заказывайте
               топовый фирменный бургер, вы не разочаруетесь!</p>
@@ -125,6 +128,19 @@
     </main>
 
     <footer class="page-footer" data-test="footer"> <!-- Footer -->
+      <section class="subscribe subscribe-special"> <!-- Подписка на рассылку -->
+        <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+        <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="subscribe-form-name">
+            <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
+              required>
+          </p>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+
       <ul class="footer-social-list"> <!-- Социальные сети -->
         <li class="footer-social-item">
           <a href="#">
