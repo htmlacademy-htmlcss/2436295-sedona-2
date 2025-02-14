@@ -44,7 +44,7 @@
             </a>
           </li>
         </ul>
-        <a class="button header-button" href="#">Хочу сюда!</a>
+          <a class="button navigation-button" href="#">Хочу сюда!</a>
       </nav>
     </header>
     <!-- Main -->
@@ -122,16 +122,18 @@
       </section>
 
       <section class="subscribe subscribe-special" data-test="subscribe"> <!-- Подписка на рассылку -->
-          <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-            <p class="subscribe-form-name">
-              <label class="visually-hidden" for="subscribe-email">Ваш e-mail</label>
-              <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
-                required>
-            </p>
-            <button class="button button subscribe-button" type="submit">Подписаться</button>
-          </form>
+          <div class="subscribe-content">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label class="subscribe-form-name" for="subscribe-email">
+                  <p class="visually-hidden">Ваш e-mail</p>
+                  <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
+                  required>
+                </label>
+              <button class="button button subscribe-button" type="submit">Подписаться</button>
+            </form>
+          </div>
       </section>
     </main>
 
