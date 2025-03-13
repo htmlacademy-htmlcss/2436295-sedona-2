@@ -77,49 +77,55 @@
       <section class="catalog-filters" data-test="filter">
         <h2 class="visually-hidden">Фильтры</h2>
         <form class="form-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-services catalog-fieldset"> <!-- Фильтр "Инфраструктура" с чекбоксами -->
+          <fieldset class="catalog-filter-services catalog-fieldset"> <!-- Фильтр с чекбоксами -->
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="pool" checked>
-                  Бассейн
+                <label class="control-label">
+                  <input class="control-input visually-hidden" type="checkbox" name="pool" checked>
+                  <span class="control-mark"></span>
+                  <span>Бассейн</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
+                <label class="control-label">
+                  <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                  <span class="control-mark"></span>
+                  <span>Парковка</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="Wi-fi">
-                  Wi-fi
+                <label class="control-label">
+                  <input class="control-input visually-hidden" type="checkbox" name="Wi-fi">
+                  <span class="control-mark"></span>
+                  <span>Wi-Fi</span>
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="catalog-filter-type catalog-fieldset"> <!-- Фильтр "Тип жилья" с радиокнопками -->
+          <fieldset class="catalog-filter-type catalog-fieldset"> <!-- Фильтр с радиокнопками -->
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="housing type" value="hotel" checked>
-                  Гостиница
+                <label class="control-label">
+                  <input class="visually-hidden control-input" type="radio" name="housing type" value="hotel" checked>
+                  <span class="control-mark"></span>
+                  <span>Гостиница</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="housing type" value="motel">
-                  Мотель
+                <label class="control-label">
+                  <input class="visually-hidden control-input" type="radio" name="housing type" value="motel">
+                  <span class="control-mark"></span>
+                  <span>Мотель</span>
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="radio" name="housing type" value="apartments">
-                  Апартаменты
+                <label class="control-label">
+                  <input class="visually-hidden control-input" type="radio" name="housing type" value="apartments">
+                  <span class="control-mark"></span>
+                  <span>Апартаменты</span>
                 </label>
               </li>
             </ul>
@@ -127,13 +133,28 @@
 
           <fieldset class="catalog-filter-price catalog-fieldset"> <!-- Фильтр "Стоимость" с ползунком -->
             <legend class="catalog-filter-title">Стоимость, ₽:</legend>
-            <label class="filter-range-control">От <input type="number" name="min-price" value="0" min="0">
-            </label>
-            <label class="filter-range-control">До <input type="number" name="max-price" value="9000" max="9000">
-            </label>
-            <input type="range" min="0" max="9000"> <!-- Пока не знаю, как связать ползунок и лэйблы -->
-
+            <div class="range-wrapper-inputs">
+              <label class="filter-range-control">
+                <input class="range-input range-input-min" type="text" name="min-price" value="0" required>
+                <span>от</span>
+              </label>
+              <label class="filter-range-control">
+                <input class="range-input range-input-max" type="text" name="max-price" value="9000" required>
+                <span>до</span>
+              </label>
+            </div>
+            <div class="range-scale">
+              <div class="range-bar" style="left:0; width:226px">
+                <button type="button" class="range-toggle toggle-min">
+                  <span class="visually-hidden">Изменить минимальную цену</span>
+                </button>
+                <button type="button" class="range-toggle toggle-max">
+                  <span class="visually-hidden">Изменить максимальную цену</span>
+                </button>
+              </div>
+            </div>
           </fieldset>
+
           <div class="catalog-filter-buttons">
             <button class="button catalog-filter-submit button-blue" type="submit">Применить</button>
             <button class="button catalog-filter-reset button-transparent" type="reset" value="сбросить">Сбросить</button>
@@ -266,7 +287,7 @@
           </li>
         </ul>
 
-        <ul class="pagination">
+        <ol class="pagination">
           <li class="pagination-item">
             <a class="pagination-link pagination-current">1</a>
           </li>
@@ -285,18 +306,17 @@
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
           </li>
-        </ul>
+        </ol>
       </section>
 
       <section class="subscribe" data-test="subscribe"> <!-- Подписка на рассылку -->
         <div class="subscribe-content">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="subscribe-form-name" for="subscribe-email">
+              <label class="subscribe-label">
                 <p class="visually-hidden">Ваш e-mail</p>
-                <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"
-                required>
+                <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
               </label>
             <button class="button subscribe-button button-blue" type="submit">Подписаться</button>
           </form>
