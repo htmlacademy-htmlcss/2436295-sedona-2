@@ -1441,6 +1441,8 @@ body{
   text-align: center;
   color: #ffffff;
   background-color: #83B3D3;
+
+  margin-top: 48px;
 }
 
 .alert{
