@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог сайта Седона</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
   </head>
 
   <body>
@@ -171,7 +172,7 @@
         </select>
         <ul class="view-button-list">
           <li class="view-button-item">
-            <a class="view-button-link view-button-link-current" href="#" type="button">
+            <button class="view-button-link view-button-link-current" type="button">
               <span class="visually-hidden">Показать плиткой</span>
               <svg width="16" height="14" aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M4 0H0V6H4V0Z" fill="black"/>
@@ -181,19 +182,19 @@
                 <path d="M16 8H12V14H16V8Z" fill="black"/>
                 <path d="M10 8H6V14H10V8Z" fill="black"/>
                 </svg>
-            </a>
+            </button>
           </li>
           <li class="view-button-item">
-            <a class="view-button-link" href="#" type="button">
+            <button class="view-button-link" type="button">
               <span class="visually-hidden">Показать карточками</span>
               <svg width="16" height="14" aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16 12H0V14H16V12Z" fill="black"/>
                 <path d="M14 2V8H2V2H14ZM16 0H0V10H16V0Z" fill="black"/>
                 </svg>
-            </a>
+            </button>
           </li>
           <li class="view-button-item">
-            <a class="view-button-link" href="#" type="button">
+            <button class="view-button-link" type="button">
               <span class="visually-hidden">Показать списком</span>
               <svg width="16" height="14" aria-hidden="true" focusable="false" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2 0H0V2H2V0Z" fill="black"/>
@@ -205,7 +206,7 @@
                 <path d="M2 12H0V14H2V12Z" fill="black"/>
                 <path d="M16 12H4V14H16V12Z" fill="black"/>
                 </svg>
-            </a>
+            </button>
           </li>
         </ul>
       </div>
@@ -313,7 +314,7 @@
           <p class="subscribe-description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="subscribe-label">
-                <p class="visually-hidden">Ваш e-mail</p>
+                <span class="visually-hidden">Ваш e-mail</span>
                 <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email" required>
               </label>
             <button class="button subscribe-button button-blue" type="submit">Подписаться</button>

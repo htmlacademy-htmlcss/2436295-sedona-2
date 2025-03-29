@@ -142,7 +142,6 @@ body {
   flex-wrap: wrap;
   align-items: flex-start;
   width: 1060px;
-  height: 64px;
   margin: 0 auto;
 }
 
@@ -227,6 +226,12 @@ body {
 .navigation-user-link:hover,
 .navigation-user-link:focus {
   background-color: transparent;
+  opacity: 0.6;
+}
+
+.navigation-user-link:active {
+  background-color: transparent;
+  opacity: 0.3;
 }
 
 
@@ -281,6 +286,7 @@ body {
   background-image: url("../images/index-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   margin-bottom: 70px;
 
   padding-top: 50px;
@@ -611,7 +617,9 @@ body {
 
 .address-footer-contacts {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  max-width: 334px;
   font-style: normal;
 }
 
@@ -651,10 +659,9 @@ body {
   background-color: #82b3d3;
   background-image: url("../images/inner-bg.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 
-  height: 412px;
-  padding: 35px 70px;
+  padding: 35px 70px 70px;
   margin-bottom: 50px;
 }
 
@@ -812,6 +819,10 @@ body {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: #3F5E72;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83B3D3;
 }
 
 .control-label:hover {
@@ -1230,7 +1241,6 @@ body {
 
 .pagination-link:not(.pagination-current):not(.pagination-unwrap):hover {
   background-color: #68A2CA;
-  border: 1px solid #82B3D3;
 }
 
 .pagination-link:not(.pagination-current):not(.pagination-unwrap):active {
